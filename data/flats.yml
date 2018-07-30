@@ -62,3 +62,11 @@ janczizikow:
   wifi: true
   tv: true
   rating: 5
+ajdubovoy:
+  name: Alex's home
+  description: Wild wild Poland at its best
+  city_name: "Warsaw, Poland"
+  city_slug: "melbourne"
+  wifi: true
+  tv: true
+  rating: 5
