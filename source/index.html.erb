@@ -12,7 +12,7 @@ title: Le Wagon - Middleman
           <form class="form-inline">
                 <input type="text" class="form-control field" id="checkin" placeholder="check-in">
                 <input type="text" class="form-control field" id="checkout" placeholder="check-out">
-                <select id="people" name="people" class="form-control" placeholder="1 Person">
+                <select id="people" name="people" class="form-control field" placeholder="1 Person">
                   <option value="1p">1 Person</option>
                   <option value="2p">2 People</option>
                   <option value="3p">3 people</option>
@@ -27,7 +27,7 @@ title: Le Wagon - Middleman
     <% data.flats.each do |owner, flat| %>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
-        <div class="card-category">Shanghai</div>
+        <div class="card-category"><%= flat.city_name %></div>
         <div class="card-description">
           <h2><%= flat.name %></h2>
           <p><%= flat.description %></p>

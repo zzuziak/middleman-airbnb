@@ -50,7 +50,12 @@
    <h4>ABOUT THE FLAT</h4>
    <p><%= flat.city_name %></p>
     <h3><%= flat.description %></h3>
-
-  </div>
+      <% if flat.wifi %>
+        <i class="fa fa-wifi" style="color: #7EF7CC; margin: 8px; font-size: 20px;"></i>
+      <% end %>
+      <% if flat.tv %>
+        <i class="fa fa-desktop" aria-hidden="true" style="color: #7EF7CC; margin: 8px; font-size: 20px;"></i>
+      <% end %>
+</div>
 </div>
 </div>

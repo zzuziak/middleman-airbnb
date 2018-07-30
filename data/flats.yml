@@ -4,6 +4,7 @@ ssaunier:
   city_name: "Paris, France"
   city_slug: "paris"
   wifi: false
+  tv: true
   rating: 4
 papillard:
   name: "Boris' home"
@@ -11,6 +12,7 @@ papillard:
   city_name: "Tokyo, Japan"
   city_slug: "tokyo"
   wifi: true
+  tv: false
   rating: 3
 monsieurpaillard:
   name: Romain's home
@@ -18,4 +20,45 @@ monsieurpaillard:
   city_name: "London, UK"
   city_slug: "london"
   wifi: true
+  tv: true
+  rating: 5
+zzuziak:
+  name: Zuzanka's home
+  description: Wild wild east
+  city_name: "Lublin, Poland"
+  city_slug: "random"
+  wifi: true
+  tv: true
+  rating: 5
+awiso:
+  name: Alex's home
+  description: New York baby
+  city_name: "NY, USA"
+  city_slug: "new-york"
+  wifi: true
+  tv: false
+  rating: 4
+asteverl:
+  name: Alexis's home
+  description: Beautiful house in the heart of Argentina
+  city_name: "Buenos Aires, Argentina"
+  city_slug: "kyoto"
+  wifi: false
+  tv: false
+  rating: 5
+diego-cst:
+  name: Diego's home
+  description: Napoli style
+  city_name: "Napoli, Italy"
+  city_slug: "bali"
+  wifi: true
+  tv: true
+  rating: 5
+janczizikow:
+  name: Johhny's home
+  description: Wild wild Poland at its best
+  city_name: "Warsaw, Poland"
+  city_slug: "melbourne"
+  wifi: true
+  tv: true
   rating: 5
