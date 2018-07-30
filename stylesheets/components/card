@@ -6,7 +6,10 @@
   color: white;
   position: relative;
   margin: 12px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: transform 0.5s; }
+  .card:hover {
+    transform: scale(1.05); }
 
 .card-user {
   position: absolute;
