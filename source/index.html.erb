@@ -23,40 +23,21 @@ title: Le Wagon - Middleman
       </div>
     </div>
 <div class="container">
-<div class="row">
-  <div class="col-xs-12 col-md-4">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-      <div class="card-category">Shanghai</div>
-      <div class="card-description">
-        <h2>Private apartment</h2>
-        <p>Very cool city, the best</p>
+  <div class="row">
+    <% data.flats.each do |owner, flat| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+        <div class="card-category">Shanghai</div>
+        <div class="card-description">
+          <h2><%= flat.name %></h2>
+          <p><%= flat.description %></p>
+        </div>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+        <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
       </div>
-      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-      <a class="card-link" href="#" ></a>
     </div>
+    <% end %>
   </div>
-  <div class="col-xs-12 col-md-4">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-      <div class="card-category">Berlin</div>
-      <div class="card-description">
-        <h2>Dormitory</h2>
-        <p>Very cool city, the best</p>
-      </div>
-      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-      <a class="card-link" href="#" ></a>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-4">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/kyoto');">
-      <div class="card-category">Kyoto</div>
-      <div class="card-description">
-        <h2>Traditional japanese room</h2>
-        <p>Very cool city, the best</p>
-      </div>
-      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-      <a class="card-link" href="#" ></a>
-    </div>
-  </div>
-</div></div>
+</div>
   <!-- </div> -->
 <!-- </div> -->

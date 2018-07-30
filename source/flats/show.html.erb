@@ -1,0 +1,56 @@
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>'); height: 50vh; background-position: center;">
+</div>
+
+<div class="container">
+<div class="grid">
+  <div class="flat-card owner text-center">
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle", width: 100 %>
+    <h3><%= owner %></h3>
+    <p class="rating">
+    <ul class="list-inline">
+    <% flat.rating.times do  %>
+    <i class="fa fa-star"></i>
+    <% end %>
+    <% ( 5 - flat.rating).times do  %>
+    <i class="fa fa-star-o"></i>
+    <% end %>
+    </ul>
+
+    </p>
+      </div>
+  <div class="flat-card book text-center">
+    <h2>Feel like booking?</h2>
+    <i class="far fa-grin-hearts"></i>
+
+      <form>
+        <div class="form-group">
+          <div class="form-group form-inline">
+            <input type="date" class="form-control" id="checkin" placeholder="check-in">
+          <!-- </div>
+          <div class="form-group form-inline"> -->
+            <input type="date" class="form-control" id="checkout" placeholder="check-out">
+          </div>
+          <div class="form-group form-inline">
+            <select id="people" name="people" class="form-control" style= "width: 100%" placeholder="1 Person">
+              <option value="1p">1 Person</option>
+              <option value="2p">2 People</option>
+              <option value="3p">3 people</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success" style= "width: 100%">Book now!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  <div class="flat-card about">
+
+   <h4>ABOUT THE FLAT</h4>
+   <p><%= flat.city_name %></p>
+    <h3><%= flat.description %></h3>
+
+  </div>
+</div>
+</div>
